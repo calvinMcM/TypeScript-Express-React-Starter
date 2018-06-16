@@ -1,0 +1,32 @@
+{
+  "name": "typescript-express-react-starter",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "webpack": "./node_modules/.bin/webpack",
+    "webpack_watch": "./node_modules/.bin/webpack --watch",
+    "compile": "./node_modules/.bin/tsc",
+    "compile_watch": "./node_modules/.bin/tsc -w"
+  },
+  "dependencies": {
+    "@types/react": "^16.3.16",
+    "@types/react-dom": "^16.0.5",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "typescript": "^2.9.1"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.0.0",
+    "source-map-loader": "^0.2.3",
+    "typescript": "^2.9.1",
+    "webpack-cli": "^3.0.2"
+  }
+}

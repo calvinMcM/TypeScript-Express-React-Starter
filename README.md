@@ -54,6 +54,16 @@ npm start
 
 This app by default starts on port 3500. You can always change that in `bin/www`.
 
+## Organization
+At the moment, the source code for the application is in the `/src` folder. Within this folder there are three
+additional folders.
+
+`src/controllers` Holds the controllers for the application. The internal model is meant to be stored here too.
+
+`src/definitions` It is occassionally requisite to write TypeScript definition files for external libraries. This is also a good place to put your own `.d.ts` files.
+
+`src/views` Holds our `.tsx` files, which store our React components.
+
 ## Contact
 If you find major bugs, feel free to log them on [github](https://github.com/calvinMcM/TypeScript-Express-React-Starter).
 Same with feature requests, though honestly, I'm not looking to run a whole lot of maintenance.

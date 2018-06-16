@@ -20,7 +20,7 @@ declare module 'react-bootstrap' {
         className?: string
     }, {}>{}
     export class DropdownButton extends React.Component<{title: any, bsStyle?: string, bsSize?: string, noCaret?: boolean, className?: string}, {}>{}
-    export class MenuItem extends React.Component<{eventKey: string, active?: boolean, divider?: boolean, className?: string}, {}>{}
+    export class MenuItem extends React.Component<{eventKey?: string|number, active?: boolean, divider?: boolean, className?: string}, {}>{}
     export class PanelGroup extends React.Component<{accordion: boolean, className?: string}, {}>{}
     export class Panel extends React.Component<{eventKey: string, className?: string}, {}>{}
     export module Panel{
@@ -55,7 +55,9 @@ declare module 'react-bootstrap' {
 
     export class Nav extends React.Component<{pullRight?: boolean, className?: string}, {}>{}
 
-    export class NavItem extends React.Component<{eventKey:string, href?:string, target?: string, className?: string}, {}>{}
+    export class NavItem extends React.Component<{eventKey:string|number, href?:string, target?: string, className?: string}, {}>{}
+
+    export class NavDropdown extends React.Component<{eventKey:string|number, title?:string, className?: string, id?: string}, {}>{}
 
     export class Label extends React.Component<{bsStyle: string}, {}>{}
     export class Badge extends React.Component<{bsStyle?: string, className?: string}, {}>{}
@@ -85,5 +87,10 @@ declare module 'react-bootstrap' {
         key?: number,
         min?: number,
         max?: number,
+    }, {}>{}
+    
+    export class Jumbotron extends React.Component<{
+        componentClass?: string,
+        bsClass?: string
     }, {}>{}
 }

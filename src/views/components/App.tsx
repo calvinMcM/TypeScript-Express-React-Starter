@@ -1,5 +1,8 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as BootStrap from "react-bootstrap";
+
+import {SampleHeader} from './SampleHeader';
+import { SampleAppBody } from "./SampleAppBody";
 
 export class AppState{
 
@@ -11,6 +14,11 @@ export class AppProps{
 
 export class App extends React.Component<AppProps, AppState>{
     render(){
-        return(<div>Welcome to {this.props.name}!</div>)
+        return(
+            <div>
+                <SampleHeader name="TypeScript-Express-React Starter"/>
+                <SampleAppBody/>
+            </div>
+        )
     }
 }
